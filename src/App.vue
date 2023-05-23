@@ -17,9 +17,55 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
-  <RouterView />
+  <RouterView v-loading="loading" />
 </template>
+<script>
+import axiosInstance from './httpService'
 
+export default {
+  data() {
+    return {
+      httpCount: 0
+    }
+  },
+  computed: {
+    loading() {
+      return this.httpCount > 0
+    }
+  },
+  created() {
+    // Add a request interceptor
+    axiosInstance.interceptors.request.use(
+      (config) => {
+        // Do something before request is sent
+        this.httpCount += 1
+        return config
+      },
+      (error) => {
+        // Do something with request error
+        this.httpCount -= 1
+        return Promise.reject(error)
+      }
+    )
+
+    // Add a response interceptor
+    axiosInstance.interceptors.response.use(
+      (response) => {
+        // Any status code that lie within the range of 2xx cause this function to trigger
+        // Do something with response data
+        this.httpCount -= 1
+        return response
+      },
+      (error) => {
+        // Any status codes that falls outside the range of 2xx cause this function to trigger
+        // Do something with response error
+        this.httpCount -= 1
+        return Promise.reject(error)
+      }
+    )
+  }
+}
+</script>
 <style scoped>
 header {
   line-height: 1.5;
