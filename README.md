@@ -1,4 +1,10 @@
-# medical-instrument-frontend
+# 集成
+    [✅]pinia
+    [✅]unocss
+    [✅]请求封装
+    [✅]eslint
+    [✅]prettier
+# frontend-seed_vue3_js
 
 This template should help get you started developing with Vue 3 in Vite.
 
