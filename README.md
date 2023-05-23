@@ -1,6 +1,7 @@
 # 集成
     [✅]pinia
     [✅]unocss
+    [✅]tailwindcss
     [✅]请求封装
     [✅]eslint
     [✅]prettier
