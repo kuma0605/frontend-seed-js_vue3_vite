@@ -2,7 +2,7 @@
     [✅]pinia
     [✅]unocss
     [✅]tailwindcss
-    [✅]请求封装
+    [✅]axios请求封装
     [✅]eslint
     [✅]prettier
 # frontend-seed_vue3_js
