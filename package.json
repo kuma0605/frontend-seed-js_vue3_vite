@@ -10,7 +10,12 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "axios": "^1.4.0",
+    "echarts": "^5.4.2",
+    "element-plus": "^2.3.5",
     "pinia": "^2.0.36",
+    "qs": "^6.11.2",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"
   },
@@ -21,6 +26,7 @@
     "@vue/eslint-config-prettier": "^7.1.0",
     "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
+    "postcss-pxtorem": "^6.0.0",
     "prettier": "^2.8.8",
     "vite": "^4.3.5"
   }
