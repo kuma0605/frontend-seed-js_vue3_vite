@@ -1,0 +1,39 @@
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.custom_tb_header_cell {
+  background-color: #e6f2fe !important;
+  color: #333333;
+  font-weight: bold;
+}
+
+.custom-dialog {
+  position: relative;
+}
+.custom-dialog .el-dialog__header {
+  margin: 0;
+  padding: 0;
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.custom-dialog .el-dialog__body {
+  margin: 0;
+  padding: 1rem;
+}
+.custom-dialog .el-dialog__footer {
+  padding: 1rem;
+}
+
+*::-webkit-scrollbar {
+  width: 0 !important;
+}
