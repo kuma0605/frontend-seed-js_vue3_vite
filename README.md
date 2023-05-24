@@ -2,11 +2,28 @@
     [✅]pinia
     [✅]unocss
     [✅]tailwindcss
-    [✅]element-plus[https://element-plus.org/zh-CN/component/button.html]
+    [✅]element-plus
     [✅]axios请求封装
     [✅]eslint
     [✅]prettier
     [✅]屏幕适配(rem)
+
+[element-plus文档地址](https://element-plus.org/zh-CN/component/button.html)
+
+## unocss
+### Configurations are what make UnoCSS powerful.
+[Rules - Define atomic CSS utilities](https://unocss.dev/config/rules)
+
+[Shortcuts - Combine multiple rules into a single shorthand.](https://unocss.dev/config/shortcuts)
+
+[Theme - Define theme variables.](https://unocss.dev/config/theme)
+
+    Variants - Apply custom conventions to rules.
+    Transformers - Code transformers to user sources code to support conventions.
+    Extractors - Define where and how the usage of utilities are extracted.
+    Preflights - Define global CSS rules.
+    Layers - Define the order of each utilities layer.
+    Presets - Predefined configurations for common use cases.
 # frontend-seed_vue3_js
 
 This template should help get you started developing with Vue 3 in Vite.
