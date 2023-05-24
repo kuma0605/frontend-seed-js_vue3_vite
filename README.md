@@ -2,7 +2,7 @@
     [✅]pinia
     [✅]unocss
     [✅]tailwindcss
-    [✅](element-plus)[https://element-plus.org/zh-CN/component/button.html]
+    [✅]element-plus[https://element-plus.org/zh-CN/component/button.html]
     [✅]axios请求封装
     [✅]eslint
     [✅]prettier
