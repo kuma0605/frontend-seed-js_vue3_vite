@@ -11,7 +11,9 @@ export default defineConfig(({mode})=>{
   const env = loadEnv(mode, process.cwd(),""); 
   let serverUrl = env.VITE_API_BASE_URL;
   return {
-    plugins: [vue(), vueJsx(), UnoCSS(),],
+    plugins: [vue(), vueJsx(), UnoCSS({
+      configFile: './uno.config.js',
+    }),],
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))
