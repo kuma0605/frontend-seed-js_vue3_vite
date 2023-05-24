@@ -6,13 +6,17 @@ import {
   } from 'unocss'
   
   export default defineConfig({
+    rules:[
+        ["login-screen",{'background-image':"url('@/assets/img/login_bg.png')"}],
+        ["adjust-full",{'background-size':"100% 100%"}]
+    ],
     shortcuts: [
       // ...
     ],
     theme: {
-      colors: {
-        // ...
-      }
+        colors: {
+            // ...
+        },
     },
     presets: [
       presetUno(),
