@@ -5,6 +5,7 @@
     [✅]axios请求封装
     [✅]eslint
     [✅]prettier
+    [✅]屏幕适配(rem)
 # frontend-seed_vue3_js
 
 This template should help get you started developing with Vue 3 in Vite.
